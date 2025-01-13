@@ -14,29 +14,35 @@ This Python script extracts all URLs from a file, supporting both Markdown-style
 
 This script is useful for validating URLs in both Markdown and plain text files, ensuring that all links are functional and accessible.
 
---
+---
+
 ## file_organizer
 
-Description:
+**Description:**
 
-This script automatically organizes files in a specified directory by their extension type. It moves files into respective folders based on their extensions (e.g., .txt files into a "Text" folder, .jpg files into an "Images" folder, etc.).
-Example:
+This script automatically organizes files in a specified directory by their extension type. It moves files into respective folders based on their extensions (e.g., `.txt` files into a "Text" folder, `.jpg` files into an "Images" folder, etc.).
 
-    The script will sort all .txt files into the "Text" folder, .jpg files into the "Images" folder, .mp4 files into the "Videos" folder, and so on.
-    It will create the necessary folders (if they don’t already exist) for each file type.
+**Example:**
+
+The script will sort all `.txt` files into the "Text" folder, `.jpg` files into the "Images" folder, `.mp4` files into the "Videos" folder, and so on. It will create the necessary folders (if they don’t already exist) for each file type.
 
 Just specify the directory you want to organize, and run the script!
 
+---
+
 ## resize_images
 
-Description:
-This Python script resizes all image files in a specified directory to the user-defined width and height.
-It saves the resized images with the same name, but adds a "_resized" suffix before the file extension.
-The new images are saved in the same directory as the original images, leaving the original files unchanged.
+**Description:**
 
-## directory_tree.
-This Python script lists all the folders and subfolders within a given directory.
-It uses the os.walk() method to recursively traverse the directory, 
-printing the relative path of each folder/subfolder.
-The user is prompted to enter the directory path, and the script checks 
-for any errors or invalid directory paths.
+This Python script resizes all image files in a specified directory to the user-defined width and height. It saves the resized images with the same name, but adds a "_resized" suffix before the file extension. The new images are saved in the same directory as the original images, leaving the original files unchanged.
+
+---
+
+## directory_tree
+
+**Description:**
+
+This Python script lists all the folders and subfolders within a given directory. It uses the `os.walk()` method to recursively traverse the directory, printing the relative path of each folder/subfolder. The user is prompted to enter the directory path, and the script checks for any errors or invalid directory paths.
+
+---
+
