@@ -13,6 +13,7 @@ This Python script extracts all URLs from a file, supporting both Markdown-style
 - **Saves the Results:** The script writes the results to a text file (`link_check_results.txt`) for future reference.
 
 This script is useful for validating URLs in both Markdown and plain text files, ensuring that all links are functional and accessible.
+
 --
 ## file_organizer
 
