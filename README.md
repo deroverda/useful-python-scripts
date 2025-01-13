@@ -46,3 +46,25 @@ This Python script lists all the folders and subfolders within a given directory
 
 ---
 
+## **duplicate_file_finder**
+
+**Description:**
+
+This Python script helps you find and manage duplicate files in a directory and its subdirectories by comparing file content rather than file names. It works by calculating a hash (defaulting to SHA256) for each file and then compares these hashes to identify duplicates. The script will print the paths of any duplicate files it finds, helping you clean up unnecessary copies and free up disk space.
+
+**How the Script Works:**
+
+- **Hash Calculation:** For each file in the specified directory, the script calculates a hash (SHA256 by default). It reads the file in chunks for efficiency, especially with large files.
+- **Directory Traversal:** It recursively walks through the given directory and its subdirectories to find all files.
+- **Duplicate Detection:** It compares the calculated hashes of the files. If two files have the same hash, they are considered duplicates.
+- **Display Results:** The script outputs a list of duplicates, showing the original file and its duplicates.
+
+**Example Use Case:**
+
+If you have multiple copies of the same files, such as images or documents scattered across folders, this script will help you identify and list those duplicates so you can remove them, freeing up valuable disk space.
+
+**Key Features:**
+
+- **Cross-Directory Search:** The script scans a directory and its subdirectories.
+- **Content-Based Comparison:** It finds duplicates by comparing file content, not just file names.
+- **Efficient Hashing:** It uses hashing (SHA256 by default) to compare files without needing to load them entirely into memory.
