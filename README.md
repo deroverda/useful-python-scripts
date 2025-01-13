@@ -26,3 +26,10 @@ Example:
     It will create the necessary folders (if they don’t already exist) for each file type.
 
 Just specify the directory you want to organize, and run the script!
+
+## resize_images
+
+Description:
+This Python script resizes all image files in a specified directory to the user-defined width and height.
+It saves the resized images with the same name, but adds a "_resized" suffix before the file extension.
+The new images are saved in the same directory as the original images, leaving the original files unchanged.
