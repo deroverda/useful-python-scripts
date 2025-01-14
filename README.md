@@ -1,7 +1,14 @@
 # Useful Python Scripts
 A collection of Python scripts for various useful tasks.
 
-## url_checker
+## Requirements
+- `requests`
+- `beautifulsoup4`
+- `os`
+- `subprocess`
+- `re`
+
+## **url_checker**
 
 **Description:**
 
@@ -16,7 +23,7 @@ This script is useful for validating URLs in both Markdown and plain text files,
 
 ---
 
-## file_organizer
+## **file_organizer**
 
 **Description:**
 
@@ -30,15 +37,27 @@ Just specify the directory you want to organize, and run the script!
 
 ---
 
-## resize_images
+## **resize_images**
 
 **Description:**
 
-This Python script resizes all image files in a specified directory to the user-defined width and height. It saves the resized images with the same name, but adds a "_resized" suffix before the file extension. The new images are saved in the same directory as the original images, leaving the original files unchanged.
+This Python script resizes all image files in a specified directory to the user-defined width and height. It saves the resized images with the same name but adds a "_resized" suffix before the file extension. The new images are saved in the same directory as the original images, leaving the original files unchanged.
+
+**How the Script Works:**
+
+- **Directory Input:** The script prompts the user to specify the directory containing the images to resize.
+- **Resizing Process:** It iterates through the images and resizes them according to the user-defined dimensions.
+- **File Saving:** The resized images are saved with a "_resized" suffix, ensuring the original files remain unmodified.
+
+**Key Features:**
+
+- **Batch Image Processing:** Resize all images in a given directory.
+- **Custom Dimensions:** Allows user-defined width and height for resizing.
+- **Preserved Originals:** The original images remain intact; only the resized copies are modified.
 
 ---
 
-## directory_tree
+## **directory_tree**
 
 **Description:**
 
@@ -71,7 +90,6 @@ If you have multiple copies of the same files, such as images or documents scatt
 
 ---
 
-
 ## **images2pdf**
 
 **Description:**
@@ -99,35 +117,35 @@ If you have a collection of scanned images or photos that you want to compile in
 
 ---
 
-# **fetch_all_links_from_webpage**
+## **fetch_all_links_from_webpage**
 
-# **Description:**
+**Description:**
 
-# This Python script extracts all hyperlinks (<a> tags) from a given webpage, saves them to a file, 
-# and handles both absolute and relative URLs. The script performs the following tasks:
+This Python script extracts all hyperlinks (`<a>` tags) from a given webpage, saves them to a file, and handles both absolute and relative URLs. The script performs the following tasks:
 
-# - **Extracts Links:** It retrieves all hyperlinks (<a> tags with href attributes) from the provided webpage URL.
-# - **Handles Relative URLs:** For any relative links (e.g., /about), it automatically converts them into absolute URLs based on the provided webpage URL.
-# - **Saves the Links:** All the extracted links are saved to a file (myLinks.txt), with each URL written on a new line.
-# - **Supports Unicode:** The script ensures that all URLs, including those with special characters (e.g., emojis or Unicode symbols), are written to the file using UTF-8 encoding to prevent encoding errors.
+- **Extracts Links:** It retrieves all hyperlinks (`<a>` tags with `href` attributes) from the provided webpage URL.
+- **Handles Relative URLs:** For any relative links (e.g., `/about`), it automatically converts them into absolute URLs based on the provided webpage URL.
+- **Saves the Links:** All the extracted links are saved to a file (`myLinks.txt`), with each URL written on a new line.
+- **Supports Unicode:** The script ensures that all URLs, including those with special characters (e.g., emojis or Unicode symbols), are written to the file using UTF-8 encoding to prevent encoding errors.
 
-# This script is helpful for extracting and saving all hyperlinks from a webpage, allowing you to analyze or collect the links for further use.
+This script is helpful for extracting and saving all hyperlinks from a webpage, allowing you to analyze or collect the links for further use.
 
 ---
 
-# **wifi_password_extractor**
+## **wifi_password_extractor**
 
-# **Description:**
+**Description:**
 
-# This Python script extracts saved Wi-Fi profiles (SSIDs) and their associated passwords from a Windows system. It performs the following tasks:
+This Python script extracts saved Wi-Fi profiles (SSIDs) and their associated passwords from a Windows system. It performs the following tasks:
 
-# - **Extracts Wi-Fi Profiles:** It retrieves all saved Wi-Fi profiles (SSIDs) from the system using the `netsh wlan show profiles` command.
-# - **Fetches Passwords:** For each profile, the script runs the `netsh wlan show profile <profile> key=clear` command to fetch the Wi-Fi password (if available).
-# - **Handles Open Networks:** If the Wi-Fi network does not have a password (i.e., it’s an open network), the script records "THE WIFI IS OPEN".
-# - **Saves Results:** The script saves the SSID and corresponding password (or the message "THE WIFI IS OPEN") to a text file (`passwords.txt`).
-# - **Error Handling:** It uses try/except blocks to skip any profiles that cause errors (e.g., inaccessible profiles) to prevent the script from crashing.
+- **Extracts Wi-Fi Profiles:** It retrieves all saved Wi-Fi profiles (SSIDs) from the system using the `netsh wlan show profiles` command.
+- **Fetches Passwords:** For each profile, the script runs the `netsh wlan show profile <profile> key=clear` command to fetch the Wi-Fi password (if available).
+- **Handles Open Networks:** If the Wi-Fi network does not have a password (i.e., it’s an open network), the script records "THE WIFI IS OPEN".
+- **Saves Results:** The script saves the SSID and corresponding password (or the message "THE WIFI IS OPEN") to a text file (`passwords.txt`).
+- **Error Handling:** It uses try/except blocks to skip any profiles that cause errors (e.g., inaccessible profiles) to prevent the script from crashing.
 
-# This script is useful for retrieving saved Wi-Fi passwords from a Windows system, especially for auditing or managing multiple networks.
+This script is useful for retrieving saved Wi-Fi passwords from a Windows system, especially for auditing or managing multiple networks.
+
 
 
 
