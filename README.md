@@ -146,6 +146,36 @@ This Python script extracts saved Wi-Fi profiles (SSIDs) and their associated pa
 
 This script is useful for retrieving saved Wi-Fi passwords from a Windows system, especially for auditing or managing multiple networks.
 
+---
+
+## **extract_text_from_pdf.py**
+
+**Description:**
+This script extracts text from a PDF file located in a specified directory
+and saves the extracted content into a text file. It ensures that special characters 
+are correctly handled by saving the output in UTF-8 encoding.
+
+How It Works:
+1. Prompts the user to enter the directory path containing the PDF file.
+2. Checks if the directory exists and contains at least one PDF file.
+3. Extracts text from the first PDF file found in the directory.
+4. Saves the extracted text to a `.txt` file in the same directory as the input PDF.
+5. Handles non-ASCII characters by saving the output in UTF-8 encoding.
+
+Error Handling:
+- Checks if the input path is a valid directory.
+- Ensures the directory contains at least one PDF file.
+- Catches and displays exceptions during extraction or file handling.
+
+Usage:
+1. Place your PDF file(s) in a directory.
+2. Run the script and input the path to the directory when prompted.
+3. The extracted text will be saved as `extracted_text.txt` in the same directory.
+
+Example Workflow:
+1. Place a PDF file in the folder `C:\Users\pdf\radio\`.
+2. Run the script and input the directory path when prompted: `C:\Users\pdf\radio\`.
+3. The extracted text will be saved to `C:\Users\pdf\radio\extracted_text.txt`.
 
 
 
