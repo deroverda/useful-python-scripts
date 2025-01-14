@@ -68,3 +68,35 @@ If you have multiple copies of the same files, such as images or documents scatt
 - **Cross-Directory Search:** The script scans a directory and its subdirectories.
 - **Content-Based Comparison:** It finds duplicates by comparing file content, not just file names.
 - **Efficient Hashing:** It uses hashing (SHA256 by default) to compare files without needing to load them entirely into memory.
+
+---
+
+
+## **images2pdf**
+
+**Description:**
+
+This Python script allows you to merge all images in a specified directory into a single PDF file. It automatically processes various image formats (like PNG, JPG, BMP, GIF), converts them to a uniform RGB format, and combines them into one PDF document. The resulting PDF is saved in the same directory as the images, making it easy to create a PDF from a batch of images.
+
+**How the Script Works:**
+
+- **Directory Input:** The script prompts the user to specify the directory containing the images to be merged.
+- **Image File Listing:** It scans the directory for image files (PNG, JPG, JPEG, BMP, GIF) and sorts them by filename.
+- **Image Conversion:** Each image is opened and converted to the RGB color mode, as required for creating PDFs.
+- **PDF Creation:** The images are saved as a single PDF file in the same directory, with each image placed on a separate page.
+- **Error Handling:** The script handles any errors related to opening or reading images, ensuring that the process continues smoothly even if some files cannot be processed.
+
+**Example Use Case:**
+
+If you have a collection of scanned images or photos that you want to compile into a single PDF document, this script will automate the process, saving you the time and effort of doing it manually. It's useful for creating digital albums, portfolios, or document compilations.
+
+**Key Features:**
+
+- **Batch Image Processing:** Converts and merges all images in a specified directory.
+- **Flexible Image Formats:** Supports common image formats like PNG, JPG, BMP, and GIF.
+- **Single PDF Output:** Generates one PDF that contains all the images, with each image on a separate page.
+- **Automatic Directory Handling:** Saves the output PDF in the same directory as the images.
+
+
+
+
