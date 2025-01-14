@@ -97,6 +97,22 @@ If you have a collection of scanned images or photos that you want to compile in
 - **Single PDF Output:** Generates one PDF that contains all the images, with each image on a separate page.
 - **Automatic Directory Handling:** Saves the output PDF in the same directory as the images.
 
+---
+
+# **fetch_all_links_from_webpage**
+
+# **Description:**
+
+# This Python script extracts all hyperlinks (<a> tags) from a given webpage, saves them to a file, 
+# and handles both absolute and relative URLs. The script performs the following tasks:
+
+# - **Extracts Links:** It retrieves all hyperlinks (<a> tags with href attributes) from the provided webpage URL.
+# - **Handles Relative URLs:** For any relative links (e.g., /about), it automatically converts them into absolute URLs based on the provided webpage URL.
+# - **Saves the Links:** All the extracted links are saved to a file (myLinks.txt), with each URL written on a new line.
+# - **Supports Unicode:** The script ensures that all URLs, including those with special characters (e.g., emojis or Unicode symbols), are written to the file using UTF-8 encoding to prevent encoding errors.
+
+# This script is helpful for extracting and saving all hyperlinks from a webpage, allowing you to analyze or collect the links for further use.
+
 
 
 
