@@ -173,9 +173,9 @@ Usage:
 3. The extracted text will be saved as `extracted_text.txt` in the same directory.
 
 Example Workflow:
-1. Place a PDF file in the folder `C:\Users\pdf\radio\`.
-2. Run the script and input the directory path when prompted: `C:\Users\pdf\radio\`.
-3. The extracted text will be saved to `C:\Users\pdf\radio\extracted_text.txt`.
+1. Place a PDF file in the folder `C:\Users\pdf`.
+2. Run the script and input the directory path when prompted: `C:\Users\pdf`.
+3. The extracted text will be saved to `C:\Users\pdf\extracted_text.txt`.
 
 
 
