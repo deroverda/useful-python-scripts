@@ -113,6 +113,21 @@ If you have a collection of scanned images or photos that you want to compile in
 
 # This script is helpful for extracting and saving all hyperlinks from a webpage, allowing you to analyze or collect the links for further use.
 
+---
+
+# **wifi_password_extractor**
+
+# **Description:**
+
+# This Python script extracts saved Wi-Fi profiles (SSIDs) and their associated passwords from a Windows system. It performs the following tasks:
+
+# - **Extracts Wi-Fi Profiles:** It retrieves all saved Wi-Fi profiles (SSIDs) from the system using the `netsh wlan show profiles` command.
+# - **Fetches Passwords:** For each profile, the script runs the `netsh wlan show profile <profile> key=clear` command to fetch the Wi-Fi password (if available).
+# - **Handles Open Networks:** If the Wi-Fi network does not have a password (i.e., it’s an open network), the script records "THE WIFI IS OPEN".
+# - **Saves Results:** The script saves the SSID and corresponding password (or the message "THE WIFI IS OPEN") to a text file (`passwords.txt`).
+# - **Error Handling:** It uses try/except blocks to skip any profiles that cause errors (e.g., inaccessible profiles) to prevent the script from crashing.
+
+# This script is useful for retrieving saved Wi-Fi passwords from a Windows system, especially for auditing or managing multiple networks.
 
 
 
