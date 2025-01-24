@@ -1,13 +1,6 @@
 # Useful Python Scripts
 A collection of Python scripts for various useful tasks.
 
-## Requirements
-- `requests`
-- `beautifulsoup4`
-- `os`
-- `subprocess`
-- `re`
-
 ## **url_checker**
 
 **Description:**
@@ -20,6 +13,10 @@ This Python script extracts all URLs from a file, supporting both Markdown-style
 - **Saves the Results:** The script writes the results to a text file (`link_check_results.txt`) for future reference.
 
 This script is useful for validating URLs in both Markdown and plain text files, ensuring that all links are functional and accessible.
+
+**Requirements:**
+- `requests`
+- `beautifulsoup4`
 
 ---
 
@@ -63,6 +60,9 @@ This Python script resizes all image files in a specified directory to the user-
 
 This Python script lists all the folders and subfolders within a given directory. It uses the `os.walk()` method to recursively traverse the directory, printing the relative path of each folder/subfolder. The user is prompted to enter the directory path, and the script checks for any errors or invalid directory paths.
 
+**Requirements:**
+- `os`
+
 ---
 
 ## **duplicate_file_finder**
@@ -87,6 +87,11 @@ If you have multiple copies of the same files, such as images or documents scatt
 - **Cross-Directory Search:** The script scans a directory and its subdirectories.
 - **Content-Based Comparison:** It finds duplicates by comparing file content, not just file names.
 - **Efficient Hashing:** It uses hashing (SHA256 by default) to compare files without needing to load them entirely into memory.
+
+**Requirements:**
+- `os`
+- `subprocess`
+- `re`
 
 ---
 
@@ -114,6 +119,10 @@ If you have a collection of scanned images or photos that you want to compile in
 - **Flexible Image Formats:** Supports common image formats like PNG, JPG, BMP, and GIF.
 - **Single PDF Output:** Generates one PDF that contains all the images, with each image on a separate page.
 - **Automatic Directory Handling:** Saves the output PDF in the same directory as the images.
+
+**Requirements:**
+- `Pillow` (for image processing)
+- `fpdf` (for PDF creation)
 
 ---
 
@@ -146,6 +155,11 @@ This Python script extracts saved Wi-Fi profiles (SSIDs) and their associated pa
 
 This script is useful for retrieving saved Wi-Fi passwords from a Windows system, especially for auditing or managing multiple networks.
 
+**Requirements:**
+- `subprocess`
+- `re`
+
+
 ---
 
 ## **extract_text_from_pdf.py**
@@ -176,6 +190,10 @@ Example Workflow:
 1. Place a PDF file in the folder `C:\Users\pdf`.
 2. Run the script and input the directory path when prompted: `C:\Users\pdf`.
 3. The extracted text will be saved to `C:\Users\pdf\extracted_text.txt`.
+
+
+**Requirements:**
+- `PyPDF2`
 
 ---
 
