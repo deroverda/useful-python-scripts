@@ -177,5 +177,23 @@ Example Workflow:
 2. Run the script and input the directory path when prompted: `C:\Users\pdf`.
 3. The extracted text will be saved to `C:\Users\pdf\extracted_text.txt`.
 
+---
 
+## **txt_to_pdf_converter**
 
+**Description:**
+
+This Python script converts `.txt` files into PDF format. It performs the following tasks:
+
+- **Finds the Text File:** The script searches the current directory for a `.txt` file and processes the first one it finds.
+- **Sanitizes Text:** It replaces unsupported characters (such as curly quotes, ellipses, and dashes) with their safe equivalents to ensure compatibility with the PDF format.
+- **Converts to PDF:** It reads the text file, sanitizes the content, and writes it to a PDF file with the same name as the original text file.
+- **Adjusts Spacing:** The script reduces unnecessary line spacing between text lines to make the PDF output more compact and readable.
+
+This script is useful for converting text-based files into well-formatted PDFs, ensuring that special characters are properly handled and that the output is formatted for easy reading.
+
+## Requirements:
+
+- `fpdf`
+
+---
